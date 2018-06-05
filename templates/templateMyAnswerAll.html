@@ -1,0 +1,21 @@
+<tr>
+    <form method="get" action="showAll_Answers.php" id="show-answers">
+        <th scope="row"><?php print $rowNumber ?></th>
+        <input type="hidden" name="sId" value="<?php print $surveyID; ?>">
+        <td>
+            <button type="submit" class="btn-link survey-link" onclick="location.href='showAll_Answers.php';">
+                <a class="survey-link"><span class="glyphicon glyphicon-link">~ </span><?php print $survey_name ?></a>
+            </button>
+
+        </td>
+        <td><?php print $username ?></td>
+        <td><?php print $date_created ?></td>
+        <td><?php print $date_answered ?></td>
+        <td>
+            <a href="charts.php?sId=<?php print $surveyID; ?>" class="survey-link"><span
+                    class="glyphicon glyphicon-play-circle"></span> ~ топ 5 </a>
+        </td>
+    </form>
+</tr>
+
+

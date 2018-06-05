@@ -1,0 +1,17 @@
+<tr>
+    <form method="post" action="showAnswers.php" id="show-answers">
+        <th scope="row"><?php print $rowNumber ?></th>
+        <input type="hidden" name="survey_name" value="<?php print $survey_name; ?>">
+        <td>
+            <button type="submit" class="btn-link survey-link" onclick="showAnswer();">
+                    <a class="survey-link" ><span class="glyphicon glyphicon-link">~ </span><?php print $survey_name ?></a>
+            </button>
+
+        </td>
+        <td><?php print $username ?></td>
+        <td><?php print $date_created ?></td>
+        <td><?php print $date_answered ?></td>
+    </form>
+</tr>
+
+

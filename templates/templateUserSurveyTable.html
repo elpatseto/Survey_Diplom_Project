@@ -1,0 +1,21 @@
+
+<tr>
+    <th scope="row"><?php print $rowNumber ?></th>
+    <td>
+        <a href="<?php print $survey_url ?>" class="survey-link" name="survey_name">
+            <span class="glyphicon glyphicon-link">~ </span> <?php print $survey_name ?>
+        </a>
+    </td>
+    <td><?php print $username ?></td>
+    <td><?php print $date_created ?></td>
+    <td class="text-center"> <?php print $number_answered ?> </td>
+    <td class="text-center">
+        <a href="" class="survey-link">Изпрати</a>
+
+    </td>
+    <td class="text-center">
+        <a href="javascript: swaDelete(<?php print $surveyID ?>);" class="survey-link glyphicon glyphicon-trash"></a>
+    </td>
+</tr>
+
+

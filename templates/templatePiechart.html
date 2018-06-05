@@ -1,0 +1,30 @@
+<!-- PIE chart-->
+<div class="row">
+    <div class=" col-md-12 col-sm-12 col-xs-12">
+        <label class="text-uppercase"><?php print $questNumber ?>. <?php print $questionName ?></label>
+    </div>
+</div>
+<div class="graphics">
+    <canvas id="doughnutChart<?php print $questNumber ?>" style="max-width: 300px;"></canvas>
+    <script>
+        var ctxD = document.getElementById("doughnutChart<?php print $questNumber ?>").getContext('2d');
+        var myLineChart = new Chart(ctxD, {
+            type: 'doughnut',
+            data: {
+                labels: [<?php print $labels; ?>],
+                datasets: [
+                    {
+                        data: [<?php print $data; ?>],
+                        backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+                        hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+                    }
+                ]
+            },
+            options: {
+                responsive: true
+            }
+        });
+    </script>
+</div>
+<hr>
+<!-- PIE of bar chart-->
