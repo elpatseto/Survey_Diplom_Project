@@ -52,8 +52,6 @@ $rowNumber = 0;
 
 include 'userAnswerTableUp.php';
 while ($row = $result->fetch_assoc()) {
-
-
     $surveyName = $row['survey_name'];
     $dateAnswer = $row['date_answered'];
     $dateCreated = $row['date_created'];
@@ -67,17 +65,18 @@ while ($row = $result->fetch_assoc()) {
         print("Не взема резултат! " . $DBH->error);
         exit;
     }
+
     while ($row_autors = $result_autor->fetch_assoc()) {
         $autor = $row_autors['username'];
-
         $rowNumber++;
+
         $tpl->set("rowNumber", $rowNumber);
         $tpl->set("survey_name", $surveyName);
         $tpl->set("username", $autor);
         $tpl->set("date_created", $dateCreated);
         $tpl->set("date_answered", $dateAnswer);
-        print $tpl->fetch('templateMyAnswerTable.html');
 
+        print $tpl->fetch('templateMyAnswerTable.html');
     }
 }
 include 'userAnswerTableDown.php';

@@ -1,11 +1,9 @@
 <?php
 session_start();
 require_once 'connectDB.php';
-
 ?>
 
 <!DOCTYPE html>
-
 <html>
 <head>
 
@@ -91,7 +89,6 @@ function logOut()
     unset($_SESSION["user"], $_SESSION['user_group'], $_SESSION['last_active'], $_SESSION['idhash']);
     header("Location: index.php");
 }
-
 ?>
 
 

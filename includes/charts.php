@@ -1,5 +1,10 @@
 <?php
 include 'header.php';
+
+if (!isUserLogged()) {
+    header("Location: login.php");
+}
+
 $currentPage = "userTests";
 $dropDownChoice = "Създай";
 
@@ -9,10 +14,6 @@ if (isUserLogged() == 1) {
     require_once 'nav-login.php';
 }
 require_once "../modules/template.php";
-
-if (!isUserLogged()) {
-    header("Location: login.php");
-}
 
 // Задаваме пътя до директориите на шаблоните
 $path = '../templates/';
@@ -48,7 +49,6 @@ if (!$result = $stmt->get_result()) {
 }
 
 while ($row = $result->fetch_assoc()) {
-
 
     $title = $row['survey_name'] . ' ';
     $instruction = $row ['instructions'];
@@ -135,11 +135,13 @@ while ($row = $result->fetch_assoc()) {
         }
         $labels = "";
         $data = "";
+
         while ($row_choices = $result_choices->fetch_assoc()) {
             if (empty($row_choices['option_choice_name'])) continue;
             $labels = $labels . ', "' . mb_substr($row_choices['option_choice_name'], 0, 30, "utf-8") . '"';
             $data = $data . ', ' . $row_choices['broi'];
         }
+
         $labels = substr($labels, 1);
         $data = substr($data, 1);
 
@@ -152,18 +154,8 @@ while ($row = $result->fetch_assoc()) {
             print $tpl->fetch('templatePiechart.html');
         }
     }
-
-
 }
 
-
-//....
-/*
-$tpl->set("", "");
-print $tpl->fetch("templateBarchart.html");
-print $tpl->fetch("templatePiechart.html");
-print $tpl->fetch("templateTextchart.html");
-*/
 include 'charts-DOWN-section.php';
 include 'footer.php';
 

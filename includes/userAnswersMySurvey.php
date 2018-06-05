@@ -1,21 +1,18 @@
 <?php
 require_once 'header.php';
 
-if (!isUserLogged()){
+if (!isUserLogged()) {
     header("Location: login.php");
 }
 
 require_once "../modules/template.php";
 $currentPage = "userTests";
 $dropDownChoice = "Създай";
-if (isUserLogged()) {
-    if(isUserLogged() == 1){
-        require_once 'nav-admin.php';
-    }else{
-        require_once 'nav-login.php';
-    }
+
+if (isUserLogged() == 1) {
+    require_once 'nav-admin.php';
 } else {
-    require_once 'nav.php';
+    require_once 'nav-login.php';
 }
 
 // Задаваме пътя до директориите на шаблоните
@@ -43,7 +40,7 @@ if (!$stmt = $DBH->prepare($query)) {
     print $DBH->error;
     exit;
 }
-if(!$stmt -> bind_param("s", $username)) {
+if (!$stmt->bind_param("s", $username)) {
     print("Не се байндва! " . $DBH->error);
     exit;
 }
@@ -75,6 +72,7 @@ while ($row = $result->fetch_assoc()) {
         print("Не взема резултат! " . $DBH->error);
         exit;
     }
+
     while ($row_autors = $result_autor->fetch_assoc()) {
         $autor = $row_autors['username'];
 
@@ -86,7 +84,6 @@ while ($row = $result->fetch_assoc()) {
         $tpl->set("date_created", $dateCreated);
         $tpl->set("date_answered", $dateAnswer);
         print $tpl->fetch('templateMyAnswerAll.html');
-
     }
 }
 include 'userAnswerTableDownMySurvey.php';
