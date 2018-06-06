@@ -239,3 +239,52 @@ $(document).ready(function () {
         }
     })
 });
+
+$(document).ready(function () {
+    $('#makeAdmin').bootstrapValidator({
+        fields: {
+            userforadmin: {
+                validators: {
+                    notEmpty: {
+                        message: 'Моля въведете потребителско име!'
+                    },
+                    remote: {
+                        type: 'POST',
+                        url: 'remote.php',
+                        message: 'Потребителкото име не съществува!',
+                        delay: 2000,
+                        data:{
+                            type:'userforadmin'
+                        }
+                    }
+                }
+            }
+        }
+    })
+});
+
+$(document).ready(function () {
+    $('#remove-admin').bootstrapValidator({
+        fields: {
+            userNoadmin: {
+                validators: {
+                    notEmpty: {
+                        message: 'Моля въведете потребителско име!'
+                    },
+                    remote: {
+                        type: 'POST',
+                        url: 'remote.php',
+                        message: 'Потребителкото име не съществува!',
+                        delay: 2000,
+                        data:{
+                            type:'userNoadmin'
+                        }
+                    }
+                }
+            }
+        }
+    })
+});
+
+
+

@@ -56,6 +56,42 @@ while ($row = $result->fetch_assoc()) {
     $tpl->set("surveyID", $row['id']);
     print $tpl->fetch('templateUserSurveyTableAdmin.html');
 }
-
 require_once 'userTestTableDownAdmin.php';
+include 'userTestTableAdmin1.php';
+
+$queryUsers = "SELECT * FROM users ORDER BY invite_dt ASC";
+if (!$stmt = $DBH->prepare($queryUsers)) {
+    print $DBH->error;
+    exit;
+}
+
+if (!$stmt->execute()) {
+    print $DBH->error;
+    exit;
+}
+if (!$result = $stmt->get_result()) {
+    print $DBH->error;
+    exit;
+}
+$rowNumber = 0;
+while ($row = $result->fetch_assoc()) {
+    $rowNumber++;
+
+    $tpl->set("number", $rowNumber);
+    $tpl->set("first_name", $row['first_name']);
+    $tpl->set("last_name", $row['last_name']);
+    $tpl->set("username", $row['username']);
+    $tpl->set("invite_dt", $row['invite_dt']);
+    $tpl->set("last_login_dt", $row['last_login_dt']);
+    if ($row['user_group'] == 2) {
+        $adminIcon = '<span class="glyphicon glyphicon-pawn" style="color: green"></span>';
+        $tpl->set("user_group", $adminIcon." - не");
+    } else {
+        $adminIcon = '<span class="glyphicon glyphicon-king" style="color: #eb3812"></span>';
+        $tpl->set("user_group", $adminIcon." - да");
+    }
+    print $tpl->fetch('templateUserSurveyTableAdmin1.html');
+}
+
+include 'userTestTableDownAdmin1.php';
 require_once 'footer.php';

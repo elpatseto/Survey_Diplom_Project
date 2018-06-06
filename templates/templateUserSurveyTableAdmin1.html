@@ -1,0 +1,18 @@
+<tr>
+    <form method="get" action="deleteUser.php">
+        <th scope="row"><?php print $number ?></th>
+        <input type="hidden" name="user" value="<?php print $username; ?>">
+        <td><?php print $first_name?></td>
+        <td><?php print $last_name?></td>
+        <td><?php print $username ?></td>
+        <td class="text-center"><?php print $invite_dt ?></td>
+        <td class="text-center"><?php print $last_login_dt ?></td>
+        <td class="text-center"><?php print $user_group ?></td>
+        <td class="text-center">
+            <a href="javascript: swaDeleteUser('<?php print $username ?>');"
+               class="survey-link glyphicon glyphicon-trash"></a>
+        </td>
+    </form>
+</tr>
+
+

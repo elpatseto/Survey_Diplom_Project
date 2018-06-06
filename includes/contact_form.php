@@ -3,7 +3,11 @@ require_once 'header.php';
 $currentPage = "contact_form";
 $dropDownChoice = "Създай";
 if (isUserLogged()) {
-    require_once 'nav-login.php';
+    if (isUserLogged() == 1) {
+        require_once 'nav-admin.php';
+    } else {
+        require_once 'nav-login.php';
+    }
 } else {
     require_once 'nav.php';
 }
@@ -95,7 +99,6 @@ if (isUserLogged()) {
                                         class="glyphicon glyphicon-send"></span></button>
                         </div>
                     </div>
-
                 </fieldset>
             </form>
         </div>

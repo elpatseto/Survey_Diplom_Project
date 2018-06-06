@@ -17,11 +17,11 @@ require_once "connectDB.php";
 require_once "../modules/template.php";
 
 $surveyID = $_GET['surveyId'];
-$autor = $_SESSION['user'];
 
-$queryHeader = "SELECT survey_name, instructions
+$queryHeader = "SELECT survey_name, instructions, username
                 FROM survey_headers, users
-                WHERE id = ?";
+                WHERE survey_headers.users_id = users.username
+                AND survey_headers.id = ?";
 
 if (!$stmt = $DBH->prepare($queryHeader)) {
     print("Грешна заявка: $queryHeader");
@@ -44,6 +44,7 @@ if (!$result = $stmt->get_result()) {
 
 while ($row = $result->fetch_assoc()) {
 
+    $autor = $row['username'];
 
     $title = $row['survey_name'] . ' ';
     $instruction = $row ['instructions'];

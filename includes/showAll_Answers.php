@@ -20,7 +20,7 @@ $path = '../templates/';
 //Създаваме инстанция на класа
 $tpl = new Template($path);
 
-$queryHeader = "SELECT instructions, id, first_name, last_name, survey_name
+$queryHeader = "SELECT instructions, id, username, survey_name
                 FROM survey_headers, users
                 WHERE id = ?
                 AND users.username = survey_headers.users_id";
@@ -46,7 +46,7 @@ if (!$result = $stmt->get_result()) {
 }
 
 while ($row = $result->fetch_assoc()) {
-    $autor = $row['first_name'].' '.$row['last_name'] ;
+    $autor = $row['username'] ;
     $instruction = $row ['instructions'];
     $surveyName = $row['survey_name'];
     $surveyID = $row['id'];

@@ -445,6 +445,29 @@ function swaDelete(sId) {
         });
 }
 
+function swaDeleteUser(user) {
+    swal({
+            title: "Сигурни ли сте?",
+            text: "Този потребител ще бъде изтрит от системата!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonClass: "btn-danger",
+            confirmButtonText: "Да, изтриване!",
+            cancelButtonText: "Не, размислих!",
+            closeOnConfirm: false,
+            closeOnCancel: false
+        },
+        function (isConfirm) {
+            if (isConfirm) {
+                var url = "deleteUser.php?username=" + user;
+                window.location.href = url;
+            } else {
+                swal("Отменено!", "Този потребител оцеля! :)", "error");
+                return false;
+            }
+        });
+}
+
 function SaveScrollXY() {
     document.forms.ScrollX.value = document.body.scrollLeft;
     document.forms.ScrollY.value = document.body.scrollTop;

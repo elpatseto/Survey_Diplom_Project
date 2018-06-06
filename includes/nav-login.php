@@ -57,7 +57,7 @@ $dropDownUser = $_SESSION['user'];
                 } ?>">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false"><span
-                                class="glyphicon glyphicon-user"></span><?php print ' ' . $dropDownUser ?>
+                                class="glyphicon glyphicon-pawn" style="color:green;"></span><?php print ' ' . $dropDownUser ?>
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="userTests.php"> Моите анкети </a></li>
