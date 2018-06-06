@@ -8,7 +8,11 @@ if (!isUserLogged()) {
 require_once "../modules/template.php";
 $currentPage = "";
 $dropDownChoice = "Създай";
-require_once 'nav-login.php';
+if (isUserLogged() == 1) {
+    require_once 'nav-admin.php';
+} else {
+    require_once 'nav-login.php';
+}
 
 $username = $_SESSION['user'];
 $surveyName = $_POST['survey_name'];
@@ -22,11 +26,15 @@ $tpl = new Template($path);
 
 $queryHeader = "SELECT instructions, id, username
                 FROM survey_headers, users
-                WHERE survey_name = '$surveyName'
+                WHERE survey_name = ?
                 AND users.username = survey_headers.users_id";
 
 if (!$stmt = $DBH->prepare($queryHeader)) {
     print("Грешна заявка: $queryHeader");
+    exit;
+}
+if (!$stmt->bind_param("s", $surveyName)) {
+    print("Не се байндва! " . $DBH->error);
     exit;
 }
 

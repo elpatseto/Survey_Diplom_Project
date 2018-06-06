@@ -1,0 +1,25 @@
+<tr>
+    <form method="get" action="showAll_Answers.php">
+        <th scope="row"><?php print $rowNumber ?></th>
+        <input type="hidden" name="sId" value="<?php print $surveyID; ?>">
+        <td>
+            <a href="<?php print $survey_url ?>" class="survey-link" name="survey_name">
+                <span class="glyphicon glyphicon-link">~ </span> <?php print $survey_name ?>
+            </a>
+        </td>
+        <td><?php print $username ?></td>
+        <td><?php print $date_created ?></td>
+        <td class="text-center">
+            <button type="submit" class="btn-link survey-link" onclick="location.href='showAll_Answers.php';">
+                <a class="survey-link"><span class="glyphicon glyphicon-link">~ </span> <?php print $number_answered?>
+                </a>
+            </button>
+        </td>
+        <td class="text-center">
+            <a href="javascript: swaDelete(<?php print $surveyID ?>);"
+               class="survey-link glyphicon glyphicon-trash"></a>
+        </td>
+    </form>
+</tr>
+
+

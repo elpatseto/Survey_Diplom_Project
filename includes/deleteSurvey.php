@@ -36,5 +36,8 @@ if (!$stmt->execute()) {
     print("Не се изпълнява заявката! " . $DBH->error);
     exit;
 }
-
-header("Location: userTests.php");
+if(isUserLogged() == 0) {
+    header("Location: userTests.php");
+}else {
+    header("Location: admin.php");
+}

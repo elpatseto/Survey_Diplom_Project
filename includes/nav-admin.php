@@ -60,9 +60,9 @@ $dropDownUser = $_SESSION['user'];
                                 class="glyphicon glyphicon-user"></span><?php print ' ' . $dropDownUser ?>
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#"> Админ панел </a></li>
                         <li><a href="userTests.php"> Моите анкети </a></li>
                         <li><a href="userAnswers.php"> Моите отговри </a></li>
+                        <li><a href="admin.php" style="color: #eb3812;"> Админ панел </a></li>
                         <li><a href="logout.php"> Изход <span class="glyphicon glyphicon-log-out"></span></a></li>
                     </ul>
                 </li>

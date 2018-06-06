@@ -134,23 +134,6 @@ while ($row = $result->fetch_assoc()) {
         print '<hr>';
     }
 }
-/*
-function getCorrectAnswer($ID){
-    global $DBH;
-    $query_correct = "SELECT option_choice_name 
-                      FROM option_choices
-                      WHERE question_id = $ID ";
-    if (!$result_correct = $DBH->query($query_correct)) {
-        print("Не взема резултат! " . $DBH->error);
-        exit;
-    }
-
-    while ($row_correcet =$result_correct->fetch_assoc()){
-        $correctAnswer = $row_correcet['option_choice_name'];
-
-    }
-    return $correctAnswer;
-}*/
 
 include 'sectionDownshowAll.php';
 

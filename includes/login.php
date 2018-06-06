@@ -2,11 +2,7 @@
 require_once 'header.php';
 $currentPage = "login";
 $dropDownChoice = "Създай";
-if (isUserLogged()) {
-    require_once 'nav-login.php';
-} else {
-    require_once 'nav.php';
-}
+require_once 'nav.php';
 ?>
 
 <section class="testForm">

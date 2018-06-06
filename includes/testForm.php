@@ -41,7 +41,7 @@ if (isUserLogged() == 1) {
                     </div>
                     <div class="col-sm-4 col-md-4 col-xs-4">
                         <input type="button" class="btn btn-warning" id="go-back" value="Назад"
-                               onclick="location.href='indexLogin.php';">
+                               onclick="location.href='index.php';">
                     </div>
                 </div>
             </form>

@@ -2,14 +2,18 @@
 include 'header.php';
 $currentPage = "index";
 $dropDownChoice = "Създай";
+
 if (isUserLogged()) {
     if(isUserLogged() == 1){
         require_once 'nav-admin.php';
+        $createSurvey = "testForm.php";
     }else{
         require_once 'nav-login.php';
+        $createSurvey = "testForm.php";
     }
 } else {
     require_once 'nav.php';
+    $createSurvey = "login.php";
 }
 ?>
 
@@ -54,7 +58,6 @@ if (isUserLogged()) {
                 <a href="#"
                    class="btn btn-primary btn-lg">Създай ТЕСТ</a>
             </div>
-
         </div>
     </div>
 </section>
@@ -87,9 +90,8 @@ if (isUserLogged()) {
                 <h2 class="section-header">Анкета</h2>
                 <p class="lead text-muted">Проучвайте общественото мнение чрез събиране на сведения по предварително
                     съставен въпросник. </p>
-                <a href="#" class="btn btn-primary btn-lg" onclick="swaFirstLogin();return false;">Създай Анкета</a>
+                <a href="<?php print $createSurvey ?>" class="btn btn-primary btn-lg">Създай Анкета</a>
             </div>
-
         </div>
     </div>
 </section>
@@ -102,7 +104,7 @@ if (isUserLogged()) {
                 <h3>Тест</h3>
             </div>
         </a>
-        <a href="" onclick="swaFirstLogin();return false;">
+        <a href="<?php print $createSurvey ?>">
             <div class="col-md-4 promo-item item-3">
                 <h3>Анкета</h3>
             </div>

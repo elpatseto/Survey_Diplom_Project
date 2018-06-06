@@ -1,14 +1,5 @@
 <?php
 require_once "header.php";
-if (isUserLogged()) {
-    if(isUserLogged() == 1){
-        require_once 'nav-admin.php';
-    }else{
-        require_once 'nav-login.php';
-    }
-} else {
-    require_once 'nav.php';
-}
 
 // Генерира се мд5 хешът на паролата. Използвайте и променливата $secretKey
 $password = md5($_POST['password'] . $secretKey);

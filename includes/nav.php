@@ -1,11 +1,10 @@
 <?php
 require_once 'connectDB.php';
 require_once 'header.php';
-$whatPage = "";
 if (!isUserLogged()) {
-    $whatPage = "index.php";
+    $createSurvey = "login.php";
 } else {
-    $whatPage = "testForm.php";
+    $createSurvey = "testForm.php";
 }
 ?>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -43,12 +42,7 @@ if (!isUserLogged()) {
                         <li class="<?php if ($currentPage == 'testForm') {
                             echo 'active';
                         } ?>">
-                            <a href="<?php if ($whatPage == "index.php") {
-                                print $whatPage;
-                            } else {
-                                print $whatPage;
-                            }
-                            ?>" onclick="swaFirstLogin();return false;">Анкета</a>
+                            <a href="<?php print $createSurvey; ?>">Анкета</a>
                         </li>
                         <li><a href="#">Тест</a></li>
                         <li><a href="#">Викторина</a></li>

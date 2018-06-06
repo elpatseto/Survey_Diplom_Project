@@ -481,15 +481,6 @@ function swaHelloUser() {
         "Желаем Ви приятни емоции в сайта!", "success")
 }
 
-function swaFirstLogin() {
-    sweetAlert({
-        title: "ВНИМАНИЕ!",
-        text: "Моля първо влезте в системата или се регистрирайте!",
-        type: "warning"
-    });
-    return false;
-}
-
 function changeCSSWrong(current) {
     var changeStyle = document.getElementById(current);
     changeStyle.style.color = "red";
