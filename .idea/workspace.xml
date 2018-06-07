@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bca213de-e22c-4f3f-94f1-407ba6c93e68" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/includes/deleteUser.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/makeAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/removeAdmin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/userTestTableAdmin1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/includes/userTestTableDownAdmin1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/templateUserSurveyTableAdmin1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/contact_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/contact_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/fillSurvey.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/fillSurvey.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/nav-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/nav-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/nav-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/nav-login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/remote.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/remote.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/showAll_Answers.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/showAll_Answers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/userTestTableAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userTestTableAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/userTestTableDownAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userTestTableDownAdmin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/userTestTableAdmin1.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userTestTableAdmin1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/userTestTableDownAdmin1.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userTestTableDownAdmin1.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/myScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/myScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/validation_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/validation_form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/templateUserSurveyTableAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/templateUserSurveyTableAdmin.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,38 +34,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="myScript.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/myScript.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="606" lean-forward="true" selection-start-line="606" selection-end-line="606" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userTestTableAdmin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/userTestTableAdmin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="userTestTableAdmin1.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/userTestTableAdmin1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="validation_form.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/validation_form.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="265" lean-forward="true" selection-start-line="265" selection-end-line="265" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="761">
-              <caret line="89" column="75" lean-forward="true" selection-start-line="89" selection-start-column="75" selection-end-line="89" selection-end-column="82" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="templateUserSurveyTableAdmin1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/templateUserSurveyTableAdmin1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="66" lean-forward="true" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+            <state relative-caret-position="17">
+              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -88,44 +64,26 @@
       <file leaf-file-name="userTestTableDownAdmin1.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/userTestTableDownAdmin1.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="38">
+              <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contact_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/contact_form.php">
+      <file leaf-file-name="nav.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/nav.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1645">
-              <caret line="102" column="19" lean-forward="true" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+            <state relative-caret-position="80">
+              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createQuestion.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/createQuestion.php">
+      <file leaf-file-name="userTestTableDownAdmin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/userTestTableDownAdmin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remote.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/remote.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="10" column="76" lean-forward="true" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="removeAdmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/includes/removeAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="68">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -216,25 +174,25 @@
         <option value="$PROJECT_DIR$/includes/nav.php" />
         <option value="$PROJECT_DIR$/includes/testForm.php" />
         <option value="$PROJECT_DIR$/includes/deleteSurvey.php" />
-        <option value="$PROJECT_DIR$/includes/userTestTableDownAdmin.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/js/myScript.js" />
         <option value="$PROJECT_DIR$/includes/deleteUser.php" />
         <option value="$PROJECT_DIR$/templates/templateUserSurveyTableAdmin.html" />
-        <option value="$PROJECT_DIR$/includes/userTestTableAdmin.php" />
-        <option value="$PROJECT_DIR$/templates/templateUserSurveyTableAdmin1.html" />
-        <option value="$PROJECT_DIR$/includes/admin.php" />
         <option value="$PROJECT_DIR$/includes/nav-login.php" />
         <option value="$PROJECT_DIR$/includes/nav-admin.php" />
         <option value="$PROJECT_DIR$/includes/fillSurvey.php" />
         <option value="$PROJECT_DIR$/includes/showAll_Answers.php" />
-        <option value="$PROJECT_DIR$/includes/userTestTableAdmin1.php" />
         <option value="$PROJECT_DIR$/includes/contact_form.php" />
         <option value="$PROJECT_DIR$/includes/makeAdmin.php" />
-        <option value="$PROJECT_DIR$/includes/userTestTableDownAdmin1.php" />
         <option value="$PROJECT_DIR$/includes/removeAdmin.php" />
         <option value="$PROJECT_DIR$/includes/remote.php" />
         <option value="$PROJECT_DIR$/js/validation_form.js" />
+        <option value="$PROJECT_DIR$/includes/admin.php" />
+        <option value="$PROJECT_DIR$/templates/templateUserSurveyTableAdmin1.html" />
+        <option value="$PROJECT_DIR$/includes/userTestTableDownAdmin.php" />
+        <option value="$PROJECT_DIR$/includes/userTestTableAdmin1.php" />
+        <option value="$PROJECT_DIR$/includes/userTestTableDownAdmin1.php" />
+        <option value="$PROJECT_DIR$/js/myScript.js" />
+        <option value="$PROJECT_DIR$/includes/userTestTableAdmin.php" />
       </list>
     </option>
   </component>
@@ -468,15 +426,15 @@
       <workItem from="1527420770010" duration="27753000" />
       <workItem from="1527520870301" duration="32214000" />
       <workItem from="1527778030565" duration="4379000" />
-      <workItem from="1528132640706" duration="28066000" />
+      <workItem from="1528132640706" duration="32186000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="657537000" />
+    <option name="totallyTimeSpent" value="661657000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -485,7 +443,7 @@
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info active="true" content_ui="combo" x="502" y="37" width="275" height="725" id="Project" order="1" sideWeight="0.49931034" visible="true" weight="0.17625134" />
+      <window_info active="true" content_ui="combo" x="502" y="37" width="275" height="725" id="Project" order="1" sideWeight="0.49931034" visible="true" weight="0.2673667" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.32956383" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32935324" />
@@ -682,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-638">
@@ -703,31 +654,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/userTestTableDownAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/myScript.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="447" column="30" selection-start-line="447" selection-start-column="30" selection-end-line="447" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/deleteSurvey.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" selection-start-line="34" selection-end-line="37" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/templateUserSurveyTableAdmin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -745,13 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="538">
           <caret line="666" column="11" selection-start-line="666" selection-start-column="11" selection-end-line="666" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/userTestTableAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -790,27 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/userTestTableAdmin1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="761">
-          <caret line="89" column="75" lean-forward="true" selection-start-line="89" selection-start-column="75" selection-end-line="89" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/templateUserSurveyTableAdmin1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="66" lean-forward="true" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/createQuestion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -846,17 +748,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/userTestTableDownAdmin1.php">
+    <entry file="file://$PROJECT_DIR$/includes/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="946">
+          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/validation_form.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="265" lean-forward="true" selection-start-line="265" selection-end-line="265" />
+        <state relative-caret-position="4131">
+          <caret line="243" column="13" selection-start-line="243" selection-start-column="13" selection-end-line="243" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/templateUserSurveyTableAdmin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/templateUserSurveyTableAdmin1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/userTestTableDownAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/userTestTableAdmin1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/userTestTableDownAdmin1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/myScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="606" lean-forward="true" selection-start-line="606" selection-end-line="606" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/userTestTableAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="68" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
         </state>
       </provider>
     </entry>

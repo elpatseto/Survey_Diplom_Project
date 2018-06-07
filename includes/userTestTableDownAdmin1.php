@@ -1,10 +1,13 @@
+
 </tbody>
 </table>
+</div>
 <legend class="title-bold">
-    Други действия
+    <a onclick="hideOther();" id="hideother">
+        <h4 class="glyphicon glyphicon-chevron-right"></h4> Други действия <span class="caret"></span></a>
 </legend>
 
-<div class="row">
+<div class="row" id="other">
     <form method="post" action="makeAdmin.php" id="makeAdmin">
         <div class="colcol-md-6 col-xs-6 col-sm-6">
             <label>Повишете в администратор: </label>
@@ -30,7 +33,6 @@
 
     </form>
 </div>
-<hr>
 </div>
 </div>
 </fieldset>

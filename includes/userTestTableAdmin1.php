@@ -1,9 +1,10 @@
 <legend class="title-bold">
-    Потребители
+    <a onclick="hideUser();" id="usershide">
+        <h4 class="glyphicon glyphicon-chevron-right"></h4> Потребители <span class="caret"></span> </a>
 </legend>
-<div class="form-group">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group" id="users">
             <table class="table">
                 <thead class="thead-dark">
                 <tr>
@@ -18,4 +19,3 @@
                 </tr>
                 </thead>
                 <tbody>
-

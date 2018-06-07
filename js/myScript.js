@@ -586,6 +586,27 @@ function goBackToAnswers() {
 }
 
 
+$(document).ready(function () {
+    $("#usershide").click(function () {
+        $("#users").fadeToggle(500);
+    });
+});
+
+$(document).ready(function () {
+    $("#hidesurvey").click(function () {
+        $("#survey").fadeToggle(500);
+    });
+});
+
+$(document).ready(function () {
+    $("#hideother").click(function () {
+        $("#other").fadeToggle(500);
+    });
+});
+
+
+
+
 
 
 

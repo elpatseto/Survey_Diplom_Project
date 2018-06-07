@@ -2,13 +2,14 @@
     <div class="container">
         <input type="hidden" value="<?php echo $surveyId; ?>" id="surveyId">
         <fieldset class="fieldset">
-
             <legend class="title-bold">
-                Потребителски анкети
+                <a onclick="hideSurvey();" id="hidesurvey">
+                    <h4 class="glyphicon glyphicon-chevron-right"></h4> Потребителски анкети <span class="caret"></span></a>
             </legend>
             <div class="form-group">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group" id="survey">
                         <table class="table">
                             <thead class="thead-dark">
                             <tr>
