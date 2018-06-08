@@ -88,10 +88,6 @@ $(document).ready(function () {
                     },
                     notEmpty: {
                         message: 'Моля въведете име!'
-                    },
-                    regexp: {
-                        regexp: /^[a-z\s]+$/i,
-                        message: 'В полето може да има само азбучни букви и интервали!'
                     }
                 }
             },
@@ -102,10 +98,6 @@ $(document).ready(function () {
                     },
                     notEmpty: {
                         message: 'Моля въведете фамилия!'
-                    },
-                    regexp: {
-                        regexp: /^[a-z\s]+$/i,
-                        message: 'В полето може да има само азбучни букви и интервали!'
                     }
                 }
             },
@@ -149,7 +141,7 @@ $(document).ready(function () {
                     },
                     regexp: {
                         regexp: /^[\w]+$/,
-                        message: 'В полето НЕ може да има знаци и интервали!'
+                        message: 'Името трябва да е на латиница без иинтервали и забранени знаци!'
                     }
                 }
             },

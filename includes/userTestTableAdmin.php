@@ -4,7 +4,7 @@
         <fieldset class="fieldset">
             <legend class="title-bold">
                 <a onclick="hideSurvey();" id="hidesurvey">
-                    <h4 class="glyphicon glyphicon-chevron-right"></h4> Потребителски анкети <span class="caret"></span></a>
+                    <h4 class="glyphicon glyphicon-book"></h4> Потребителски анкети <span class="caret"></span></a>
             </legend>
             <div class="form-group">
                 <div class="row">
@@ -18,6 +18,7 @@
                                 <th scope="col"><span class="glyphicon glyphicon-user"></span> Автор</th>
                                 <th scope="col" class="text-center"><span class="glyphicon glyphicon-calendar"></span> Дата на създаване</th>
                                 <th scope="col" class="text-center"><span class="glyphicon glyphicon-ok"></span> Брой попълвания</th>
+                                <th scope="col" class="text-center"><span class="glyphicon glyphicon-signal"></span> Графика</th>
                                 <th scope="col"><span class="glyphicon glyphicon-erase"></span> Изтриване</th>
                             </tr>
                             </thead>

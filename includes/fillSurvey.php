@@ -13,7 +13,6 @@ if (isUserLogged() == 1) {
     require_once 'nav-login.php';
 }
 
-require_once "connectDB.php";
 require_once "../modules/template.php";
 
 $surveyID = $_GET['surveyId'];

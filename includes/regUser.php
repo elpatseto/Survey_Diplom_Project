@@ -1,5 +1,19 @@
 <?php
 require_once "header.php";
+$dropDownChoice = "Създай";
+require_once 'nav-login.php';
+?>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>МавериК</h1>
+                <p>Създай собсвен тест, анкета или викторина</p>
+                <a href="#row promo" class="btn btn-primary btn-lg">Старт</a>
+            </div>
+        </div>
+    </header>
+<?php
 
 if (!empty($_POST)) {
     $data = $_POST;
@@ -38,7 +52,7 @@ print '<body><script type="text/javascript">
     swaHelloNewUser();
     setTimeout(function () {
         window.location = url;
-    }, 2000);
+    }, 2500);
     </script></body>';
 
 

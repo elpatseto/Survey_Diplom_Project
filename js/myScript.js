@@ -439,7 +439,7 @@ function swaDelete(sId) {
                 var url = "deleteSurvey.php?surveyID=" + sId;
                 window.location.href = url;
             } else {
-                swal("Отменено!", "Анкетата Ви е спасена :)", "error");
+                swal("Отменено!", "Анкетата е спасена :)", "error");
                 return false;
             }
         });
@@ -466,6 +466,27 @@ function swaDeleteUser(user) {
                 return false;
             }
         });
+}
+
+function getUrl(surveyUrl) {
+    var url = "http://localhost/Survey_Diplom_Project/includes/" + surveyUrl;
+    swal({
+        title: "Изпращане на линк",
+        text: url,
+        type: "input",
+        showCancelButton: true,
+        closeOnConfirm: false,
+        inputPlaceholder: "someone@yahoo.com"
+    }, function (email) {
+        if (email === false) return false;
+        if (email === "") {
+            swal.showInputError("Необходимо е да въвдете имейл адрес!");
+            return false
+        }
+        window.location = 'mailto:' + email + '?subject=' + 'Анкета' +
+            '&body=' + 'Моля попълнете анкетата - ' + url;
+        swal( email , "Очаква вашата анкета!", "success");
+    });
 }
 
 function SaveScrollXY() {

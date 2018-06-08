@@ -23,11 +23,12 @@ $tpl = new Template($path);
 
 //....
 $surveyID = $_GET['sId'];
-$autor = $_SESSION['user'];
 
-$queryHeader = "SELECT survey_name, instructions
+
+$queryHeader = "SELECT survey_name, instructions, username
                 FROM survey_headers, users
-                WHERE id = ?";
+                WHERE users.username = survey_headers.users_id
+                AND id = ?";
 
 if (!$stmt = $DBH->prepare($queryHeader)) {
     print("Грешна заявка: $queryHeader");
@@ -50,6 +51,7 @@ if (!$result = $stmt->get_result()) {
 
 while ($row = $result->fetch_assoc()) {
 
+    $autor = $row['username'] ;
     $title = $row['survey_name'] . ' ';
     $instruction = $row ['instructions'];
 }

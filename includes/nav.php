@@ -19,9 +19,9 @@ if (!isUserLogged()) {
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.php">
-                <span class="glyphicon glyphicon-fire"></span>
+                <span class="glyphicon glyphicon-king"></span>
                 МавериК
-                <span class="glyphicon glyphicon-fire"></span>
+                <span class="glyphicon glyphicon-king"></span>
             </a>
         </div>
         <!-- Navbar links -->

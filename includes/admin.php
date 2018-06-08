@@ -57,8 +57,8 @@ while ($row = $result->fetch_assoc()) {
     print $tpl->fetch('templateUserSurveyTableAdmin.html');
 }
 require_once 'userTestTableDownAdmin.php';
-include 'userTestTableAdmin1.php';
 
+include 'userTestTableAdmin1.php';
 $queryUsers = "SELECT * FROM users ORDER BY invite_dt ASC";
 if (!$stmt = $DBH->prepare($queryUsers)) {
     print $DBH->error;
@@ -81,10 +81,11 @@ while ($row = $result->fetch_assoc()) {
     $tpl->set("first_name", $row['first_name']);
     $tpl->set("last_name", $row['last_name']);
     $tpl->set("username", $row['username']);
+    $tpl->set("email", $row['email']);
     $tpl->set("invite_dt", $row['invite_dt']);
     $tpl->set("last_login_dt", $row['last_login_dt']);
     if ($row['user_group'] == 2) {
-        $adminIcon = '<span class="glyphicon glyphicon-pawn" style="color: green"></span>';
+        $adminIcon = '<span class="glyphicon glyphicon-knight" style="color: green"></span>';
         $tpl->set("user_group", $adminIcon." - не");
     } else {
         $adminIcon = '<span class="glyphicon glyphicon-king" style="color: #eb3812"></span>';

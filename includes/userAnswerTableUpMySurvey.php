@@ -13,9 +13,9 @@
                                     <th scope="col"><span class="glyphicon glyphicon-star"></span></th>
                                     <th scope="col"><span class="glyphicon glyphicon-book"></span> Заглавие</th>
                                     <th scope="col"><span class="glyphicon glyphicon-user"></span> Автор</th>
-                                    <th scope="col"><span class="glyphicon glyphicon-calendar"></span> Дата на създаване </th>
-                                    <th scope="col"><span class="glyphicon glyphicon-calendar"></span> Последно попълване</th>
-                                    <th scope="col"><span class="glyphicon glyphicon-signal"></span> Графика</th>
+                                    <th scope="col" class="text-center"><span class="glyphicon glyphicon-calendar"></span> Дата на създаване </th>
+                                    <th scope="col" class="text-center"><span class="glyphicon glyphicon-calendar"></span> Последно попълване</th>
+                                    <th scope="col" class="text-center"><span class="glyphicon glyphicon-signal"></span> Графика</th>
                                 </tr>
                                 </thead>
                                 <tbody>

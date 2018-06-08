@@ -32,11 +32,13 @@ if ($_SESSION['user_group'] == 1) {
         exit;
     }
 }
+
 if (!$stmt->execute()) {
     print("Не се изпълнява заявката! " . $DBH->error);
     exit;
 }
-if(isUserLogged() == 0) {
+
+if(isUserLogged() == 2) {
     header("Location: userTests.php");
 }else {
     header("Location: admin.php");

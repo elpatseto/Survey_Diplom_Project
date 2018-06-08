@@ -5,6 +5,25 @@ if (!isUserLogged()) {
     header("Location: login.php");
 }
 
+$dropDownChoice = "Създай";
+if (isUserLogged() == 1) {
+    require_once 'nav-admin.php';
+} else {
+    require_once 'nav-login.php';
+}
+?>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>МавериК</h1>
+                <p>Създай собсвен тест, анкета или викторина</p>
+                <a href="#row promo" class="btn btn-primary btn-lg">Старт</a>
+            </div>
+        </div>
+    </header>
+<?php
+
 $title = $_POST['title'];
 $query = "UPDATE survey_headers  SET date_answered = ?, number_answered = number_answered + 1
               WHERE survey_name ='$title'";
@@ -128,7 +147,7 @@ saveData($_POST['question']);
 
 
 print '<body><script type="text/javascript">
-    var url = "userTests.php";
+    var url = "index.php";
     swaSuccessfullyFillTest();
     setTimeout(function () {
         window.location = url;

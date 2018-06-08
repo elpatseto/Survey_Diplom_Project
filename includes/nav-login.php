@@ -17,9 +17,9 @@ $dropDownUser = $_SESSION['user'];
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="index.php">
-                <span class="glyphicon glyphicon-fire"></span>
+                <span class="glyphicon glyphicon-king"></span>
                 МавериК
-                <span class="glyphicon glyphicon-fire"></span>
+                <span class="glyphicon glyphicon-king"></span>
             </a>
         </div>
         <!-- Navbar links -->
@@ -57,7 +57,7 @@ $dropDownUser = $_SESSION['user'];
                 } ?>">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                        aria-expanded="false"><span
-                                class="glyphicon glyphicon-pawn" style="color:green;"></span><?php print ' ' . $dropDownUser ?>
+                                class="glyphicon glyphicon-knight"></span><?php print ' ' . $dropDownUser ?>
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="userTests.php"> Моите анкети </a></li>

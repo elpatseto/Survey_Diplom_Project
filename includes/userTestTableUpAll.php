@@ -13,8 +13,8 @@
                             <th scope="col"><span class="glyphicon glyphicon-star"></span></th>
                             <th scope="col"><span class="glyphicon glyphicon-book"></span> Заглавие </th>
                             <th scope="col"><span class="glyphicon glyphicon-user"></span> Автор</th>
-                            <th scope="col"><span class="glyphicon glyphicon-calendar"></span> Дата</th>
-                            <th scope="col"><span class="glyphicon glyphicon-ok"></span> Брой попълвания</th>
+                            <th scope="col" class="text-center"><span class="glyphicon glyphicon-calendar"></span> Дата</th>
+                            <th scope="col" class="text-center"><span class="glyphicon glyphicon-ok"></span> Брой попълвания</th>
                         </tr>
                         </thead>
                         <tbody>
