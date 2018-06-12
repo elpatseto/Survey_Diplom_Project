@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bca213de-e22c-4f3f-94f1-407ba6c93e68" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/charts-UP-section.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/charts.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/charts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/createQuestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/createQuestion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/deleteSurvey.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/deleteSurvey.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/fillSurvey.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/fillSurvey.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/nav-admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/nav-admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/nav-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/nav-login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/nav.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/regUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/regUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/saveAnswers.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/saveAnswers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/sectionDown.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/sectionDown.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/userAnswerTableUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userAnswerTableUp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/userAnswerTableUpMySurvey.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userAnswerTableUpMySurvey.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/userLogin.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userLogin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/userTestTableAdmin.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userTestTableAdmin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/userTestTableAdmin1.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userTestTableAdmin1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/userTestTableDownAdmin1.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userTestTableDownAdmin1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/userTestTableUp.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userTestTableUp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/userTestTableUpAll.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/userTestTableUpAll.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/myScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/myScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/validation_form.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/validation_form.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/templateMyAnswerAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/templateMyAnswerAll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/templateMyAnswerTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/templateMyAnswerTable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/templateUserSurveyTable.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/templateUserSurveyTable.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/templateUserSurveyTableAdmin.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/templateUserSurveyTableAdmin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/templateUserSurveyTableAdmin1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/templateUserSurveyTableAdmin1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/templateUserSurveyTableAll.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/templateUserSurveyTableAll.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/dropDownChoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/dropDownChoice.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -70,17 +42,17 @@
       <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
+            <state relative-caret-position="1411">
               <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userTestTableDownAdmin1.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/includes/userTestTableDownAdmin1.php">
+      <file leaf-file-name="dropDownChoice.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/dropDownChoice.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="28" column="97" selection-start-line="28" selection-start-column="97" selection-end-line="28" selection-end-column="97" />
+            <state relative-caret-position="731">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
@@ -139,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/templatePiechart.html" />
         <option value="$PROJECT_DIR$/includes/footer.php" />
         <option value="$PROJECT_DIR$/includes/userTestAll.php" />
         <option value="$PROJECT_DIR$/includes/userAnswers.php" />
@@ -190,6 +161,7 @@
         <option value="$PROJECT_DIR$/includes/nav-login.php" />
         <option value="$PROJECT_DIR$/includes/nav-admin.php" />
         <option value="$PROJECT_DIR$/includes/userTestTableDownAdmin1.php" />
+        <option value="$PROJECT_DIR$/includes/dropDownChoice.php" />
       </list>
     </option>
   </component>
@@ -286,22 +258,7 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Survey_Diplom_Project" type="cbb8eebc:String" user="Survey_Diplom_Project" />
-              <item name="css" type="cbb8eebc:String" user="css" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Survey_Diplom_Project" type="cbb8eebc:String" user="Survey_Diplom_Project" />
               <item name="includes" type="cbb8eebc:String" user="includes" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Survey_Diplom_Project" type="cbb8eebc:String" user="Survey_Diplom_Project" />
-              <item name="js" type="cbb8eebc:String" user="js" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Survey_Diplom_Project" type="cbb8eebc:String" user="Survey_Diplom_Project" />
-              <item name="templates" type="cbb8eebc:String" user="templates" />
             </path>
           </expand>
           <select />
@@ -423,15 +380,15 @@
       <workItem from="1527420770010" duration="27753000" />
       <workItem from="1527520870301" duration="32214000" />
       <workItem from="1527778030565" duration="4379000" />
-      <workItem from="1528132640706" duration="44939000" />
+      <workItem from="1528132640706" duration="46048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="674410000" />
+    <option name="totallyTimeSpent" value="675519000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -440,7 +397,7 @@
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info active="true" content_ui="combo" x="502" y="37" width="275" height="725" id="Project" order="1" sideWeight="0.49931034" visible="true" weight="0.2657512" />
+      <window_info active="true" content_ui="combo" x="502" y="37" width="275" height="725" id="Project" order="1" sideWeight="0.49931034" visible="true" weight="0.1368477" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.32956383" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32935324" />
@@ -474,13 +431,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/userAnswerTableDownMySurvey.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/showAnswersAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1098">
@@ -801,17 +751,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/userTestTableDownAdmin1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
           <caret line="28" column="97" selection-start-line="28" selection-start-column="97" selection-end-line="28" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="83" column="38" lean-forward="true" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/dropDownChoice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
