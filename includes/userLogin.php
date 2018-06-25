@@ -19,7 +19,7 @@ require_once 'nav-login.php';
 $password = md5($_POST['password'] . $secretKey);
 
 // SQL заявката за проверка
-$query = "SELECT username, user_group FROM users WHERE username = ? AND password_hashed = ? AND status = 1";
+$query = "SELECT username, user_group FROM users WHERE username = ? AND password_hashed = ?";
 
 // Изпълнение на заявката като параметризирана
 if (!$stmt = $DBH->prepare($query)) {

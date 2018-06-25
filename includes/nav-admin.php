@@ -31,6 +31,12 @@ $dropDownUser = $_SESSION['user'];
                 } ?>">
                     <a href="index.php">Начало</a>
                 </li>
+                <li class="<?php if ($currentPage == 'howItWorks') {
+                    echo 'active';
+                } ?>"><a href="howItWorks.php">Как работи</a></li>
+                <li class="dropdown <?php if ($currentPage == 'testForm') {
+                    echo 'active';
+                } ?>">
                 <li class="dropdown <?php if ($currentPage == 'testForm') {
                     echo 'active';
                 } ?>">
@@ -60,7 +66,7 @@ $dropDownUser = $_SESSION['user'];
                                 class="glyphicon glyphicon-king"></span><?php print ' ' . $dropDownUser ?>
                         <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="userTests.php"> Моите анкети </a></li>
+                        <li><a href="userTests.php"> Моите формуляри </a></li>
                         <li><a href="userAnswers.php"> Моите отговри </a></li>
                         <li><a href="admin.php" style="color: #eb3812;"> Админ панел </a></li>
                         <li><a href="logout.php"> Изход <span class="glyphicon glyphicon-log-out"></span></a></li>

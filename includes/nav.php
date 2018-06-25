@@ -33,6 +33,9 @@ if (!isUserLogged()) {
                 } ?>">
                     <a href="index.php">Начало</a>
                 </li>
+                <li class="<?php if ($currentPage == 'howItWorks') {
+                    echo 'active';
+                } ?>"><a href="howItWorks.php">Как работи</a></li>
                 <li class="dropdown <?php if ($currentPage == 'testForm') {
                     echo 'active';
                 } ?>">

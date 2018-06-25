@@ -587,11 +587,6 @@ function submitSurvey() {
     document.forms[0].submit();
 }
 
-function goBack() {
-    var url = "userTests.php";
-    window.location = url;
-}
-
 function deleteSurvey() {
     swaDelete();
 }

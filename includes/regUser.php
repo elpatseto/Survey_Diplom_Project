@@ -24,8 +24,8 @@ if (!empty($_POST)) {
 $invite_dt = date("Y-m-d H:i:s", time());
 $isAdmin = 2;
 
-$query = "INSERT INTO users(username, password_hashed, first_name, last_name, email, user_group, invite_dt, status) 
-          VALUES (?,?,?,?,?,?,?,1)";
+$query = "INSERT INTO users(username, password_hashed, first_name, last_name, email, user_group, invite_dt) 
+          VALUES (?,?,?,?,?,?,?)";
 
 if (!$stmt = $DBH->prepare($query)) {
     print("Грешна заявка: $query");
