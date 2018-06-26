@@ -53,7 +53,6 @@ while ($row = $result->fetch_assoc()) {
     $tpl->set("rowNumber", $rowNumber);
     $tpl->set("survey_name", $row['survey_name']);
     $tpl->set("survey_url", $row['survey_url']);
-    $tpl->set("username", $_SESSION['user']);
     $tpl->set("date_created", $row['date_created']);
     $tpl->set("number_answered", $row['number_answered']);
     $tpl->set("surveyID", $row['id']);

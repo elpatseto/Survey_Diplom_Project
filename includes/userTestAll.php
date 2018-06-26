@@ -23,7 +23,7 @@ $tpl = new Template($path);
 $query = "SELECT survey_name, survey_url, username, date_created, number_answered
           FROM survey_headers, users 
           WHERE username = users_id 
-          ORDER BY survey_name ASC";
+          ORDER BY date_created DESC";
 
 
 if (!$stmt = $DBH->prepare($query)) {

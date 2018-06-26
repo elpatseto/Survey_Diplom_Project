@@ -1,19 +1,6 @@
 <?php
 require_once "header.php";
 $dropDownChoice = "Създай";
-require_once 'nav-login.php';
-?>
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>МавериК</h1>
-                <p>Създай собсвен тест, анкета или викторина</p>
-                <a href="#row promo" class="btn btn-primary btn-lg">Старт</a>
-            </div>
-        </div>
-    </header>
-<?php
 
 // Генерира се мд5 хешът на паролата. Използвайте и променливата $secretKey
 $password = md5($_POST['password'] . $secretKey);
@@ -44,6 +31,21 @@ if (!$result = $stmt->get_result()) {
 
 // Проверка дали има потребител с такива име и парола
 if ($row = $result->fetch_assoc()) {
+
+    require_once 'nav-login.php';
+    ?>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>МавериК</h1>
+                <p>Създай собсвен тест, анкета или викторина</p>
+                <a href="#row promo" class="btn btn-primary btn-lg">Старт</a>
+            </div>
+        </div>
+    </header>
+    <?php
+
     // Да, има потребител с такива име и парола
     // Обновете lastLogin атрибута
     $query = "UPDATE users SET last_login_dt = ? WHERE username = ? ";

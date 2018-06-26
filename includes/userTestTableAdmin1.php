@@ -16,7 +16,7 @@
                         регистрация
                     </th>
                     <th scope="col" class="text-center"><span class="glyphicon glyphicon-calendar"></span> Последно
-                        влизне
+                        влизане
                     </th>
                     <th scope="col" class="text-center"><span class="glyphicon glyphicon-king"></span> Админ. права</th>
                     <th scope="col" class="text-center"><span class="glyphicon glyphicon-erase"></span> Изтриване</th>

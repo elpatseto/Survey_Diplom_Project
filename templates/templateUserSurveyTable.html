@@ -6,9 +6,12 @@
             <span class="glyphicon glyphicon-link">~ </span> <?php print $survey_name ?>
         </a>
     </td>
-    <td><?php print $username ?></td>
     <td class="text-center"><?php print $date_created ?></td>
     <td class="text-center"> <?php print $number_answered ?> </td>
+    <td class="text-center">
+       <a href="charts.php?sId=<?php print $surveyID; ?>" class="survey-link"><span
+                class="glyphicon glyphicon-play-circle"></span></a>
+    </td>
     <td class="text-center">
         <a href="javascript: getUrl('<?php print $survey_url; ?>');"
            class="survey-link" >Изпрати</a>
