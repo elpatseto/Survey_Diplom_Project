@@ -27,7 +27,9 @@ if (isUserLogged() == 1) {
                     <br>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12">
-                            <label for="instruction">Инсрукции</label>
+                            <label for="instruction">Инструкции при попълване
+                            <h6><em>* Въвеждането на инструкции не е задължително!</em></h6>
+                            </label>
                             <textarea class="form-control textarea" name="instruction"
                                       style="height: 100px;"></textarea>
                         </div>

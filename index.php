@@ -4,10 +4,10 @@ $currentPage = "index";
 $dropDownChoice = "Създай";
 
 if (isUserLogged()) {
-    if (isUserLogged() == 1) {
+    if(isUserLogged() == 1){
         require_once 'nav-admin.php';
         $createSurvey = "testForm.php";
-    } else {
+    }else{
         require_once 'nav-login.php';
         $createSurvey = "testForm.php";
     }
@@ -22,7 +22,7 @@ if (isUserLogged()) {
     <div class="header-content">
         <div class="header-content-inner">
             <h1>МавериК</h1>
-            <h4 style="color: black;">Създайте собсвен тест, анкета или викторина</h4>
+            <p>Създайте собсвен тест, анкета или викторина</p>
             <a href="#row promo" class="btn btn-primary btn-lg">Старт</a>
         </div>
     </div>
@@ -34,10 +34,8 @@ if (isUserLogged()) {
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <span class="glyphicon glyphicon-ok" style="font-size: 60px"></span>
-                <h2 class="section-heading">Направете вашето проучване и анализирайте резултатите като истински
-                    професионалист.</h2>
-                <p class="text-light">Напълно безплатно, без реклами, без скрити условия, лесен и удобен интерфейс. <br>
-                    Като истински професионалист създавате тестове, анкети или викторини.
+                <h2 class="section-heading">Направете собствено проучване и вижте какви са резултатите.</h2>
+                <p class="text-light">Като истински професионалист създавате тестове, анкети или викторини.
                     Лесно изпращате към вашите абонати и получавате резултатите във вид на графика. </p>
             </div>
         </div>
@@ -45,17 +43,20 @@ if (isUserLogged()) {
 </section>
 
 <!-- Content 1 -->
-<section class="content-3">
+<section class="content">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img class="img-responsive img-circle center-block" src="../images/anketa.jpg" alt="">
+                <img class="img-responsive img-circle center-block" src="../images/tipo-test.jpg" alt="">
             </div>
             <div class="col-sm-6">
-                <h2 class="section-header">Анкета</h2>
-                <p class="lead text-muted">Проучвайте общественото мнение по важни за вас въпроси и вижте анализ
-                    отговорите мигновено и прегледно, чрез нашите графики. </p>
-                <a href="<?php print $createSurvey ?>" class="btn btn-primary btn-lg">Създайте АНКЕТА</a>
+                <h2 class="section-header">Тест</h2>
+                <p class="lead text-muted">Създавате своите тестове като конструирате въпросите си избирайки от
+                    множеството опции, които ще откриете.
+                    Добрата новина е, че може да маркирате верните отговори, като по този начин обикновеният тест се
+                    превръща в изпитен вариант. </p>
+                <a href="#"
+                   class="btn btn-primary btn-lg">Създайте ТЕСТ</a>
             </div>
         </div>
     </div>
@@ -79,20 +80,17 @@ if (isUserLogged()) {
 </section>
 
 <!-- Content 3 -->
-<section class="content">
+<section class="content-3">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img class="img-responsive img-circle center-block" src="../images/tipo-test.jpg" alt="">
+                <img class="img-responsive img-circle center-block" src="../images/anketa.jpg" alt="">
             </div>
             <div class="col-sm-6">
-                <h2 class="section-header">Тест</h2>
-                <p class="lead text-muted">Създавате своите тестове като конструирате въпросите си избирайки от
-                    множеството опции, които ще откриете.
-                    Добрата новина е, че може да маркирате верните отговори, като по този начин обикновеният тест се
-                    превръща в изпитен вариант. </p>
-                <a href="#"
-                   class="btn btn-primary btn-lg">Създайте ТЕСТ</a>
+                <h2 class="section-header">Анкета</h2>
+                <p class="lead text-muted">Проучвайте общественото мнение чрез събиране на сведения по предварително
+                    съставен въпросник. </p>
+                <a href="<?php print $createSurvey ?>" class="btn btn-primary btn-lg">Създайте АНКЕТА</a>
             </div>
         </div>
     </div>

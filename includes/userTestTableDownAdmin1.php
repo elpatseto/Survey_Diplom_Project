@@ -29,7 +29,6 @@
             <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-knight"></span> ОК
             </button>
         </div>
-
     </form>
 </div>
 </div>

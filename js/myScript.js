@@ -417,8 +417,8 @@ function swaFillRequiredQuestion() {
 function swaWrongUser() {
     sweetAlert({
         title: "ВНИМАНИЕ!",
-        text: "Невалидно потребителско име или парола!",
-        type: "warning"
+        text: "Невалидно потребителско име или грешна парола!",
+        type: "error"
     });
 }
 
@@ -620,7 +620,35 @@ $(document).ready(function () {
     });
 });
 
+$(document).ready(function () {
+    $("#info-forms").click(function () {
+        $("#info-user-tests").fadeToggle(500);
+    });
+});
 
+$(document).ready(function () {
+    $("#info-forms-all").click(function () {
+        $("#info-user-tests-all").fadeToggle(500);
+    });
+});
+
+$(document).ready(function () {
+    $("#info-answer").click(function () {
+        $("#info-user-answer").fadeToggle(500);
+    });
+});
+
+$(document).ready(function () {
+    $("#info-my-answer").click(function () {
+        $("#info-user-my-answer").fadeToggle(500);
+    });
+});
+
+function blinker() {
+    $('.blinking').fadeOut(1000);
+    $('.blinking').fadeIn(1000);
+}
+setInterval(blinker, 1000);
 
 
 

@@ -68,7 +68,7 @@ $dropDownUser = $_SESSION['user'];
                     <ul class="dropdown-menu">
                         <li><a href="userTests.php"> Моите формуляри </a></li>
                         <li><a href="userAnswers.php"> Моите отговри </a></li>
-                        <li><a href="admin.php" style="color: #eb3812;"> Админ панел </a></li>
+                        <li><a href="admin.php" style="color: #eb3812;"> Администратор </a></li>
                         <li><a href="logout.php"> Изход <span class="glyphicon glyphicon-log-out"></span></a></li>
                     </ul>
                 </li>

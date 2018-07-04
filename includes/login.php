@@ -10,7 +10,6 @@ require_once 'nav.php';
         <form class="well form-horizontal" action="userLogin.php" method="post" id="login_form">
             <?php
             if (!empty($_GET['error']) && $_GET['error'] == 1) {
-                // print 'Невалидно потребителско име или парола!';
                 print '<script type="text/javascript"> swaWrongUser(); </script>';
             }
             ?>
@@ -40,18 +39,22 @@ require_once 'nav.php';
                     </div>
                 </div>
 
-                <!-- Success message -->
-                <div class="alert alert-success" role="alert" id="success_message">Добре дошъли!
-                    <i class="glyphicon glyphicon-thumbs-up"></i>
-                    <br> Желаем Ви приятни могове в сайтa!
-                </div>
-
                 <!-- Button -->
                 <div class="form-group">
                     <label class="col-md-4 control-label"></label>
                     <div class="col-md-4">
                         <button type="submit" class="btn btn-warning">Вход <span
                                     class="glyphicon glyphicon-log-in"></span></button>
+                    </div>
+                </div>
+                <hr>
+                <!-- Ако не сте регистриран -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label"> Ако не сте регистриран потребител </label>
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-default" onclick="location='register.php'">
+                            Регистрирация
+                        </button>
                     </div>
                 </div>
             </fieldset>

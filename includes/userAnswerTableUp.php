@@ -3,6 +3,22 @@
         <fieldset class="fieldset">
             <legend class="title-bold">
                 Моите отговори
+                <h5><em>* В тази секция се намират всички формуляри, които сте попълвали!</em></h5>
+                <a id="info-answer">
+                    <h5>
+                        <span
+                                class="glyphicon glyphicon-hand-right blinking">
+                        </span> <em>Виж информация за страницата</em>
+                    </h5>
+                </a>
+
+                <div class="info" id="info-user-answer" hidden>
+                    <h6><em><span class="glyphicon glyphicon-link"></span> - За преглед на вашите отговори натиснете с левия
+                            бутон на мипката върху заглавието!</em>
+                        <img class="blinking" src="../images/computer-mouse-left-click.png" style="width: 25px; ">
+                    </h6>
+                </div>
+
             </legend>
                 <div class="form-group">
                     <div class="row">

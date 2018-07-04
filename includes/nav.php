@@ -64,7 +64,7 @@ if (!isUserLogged()) {
                 <li class="<?php if ($currentPage == 'login') {
                     echo 'active';
                 } ?>">
-                    <a href="login.php"><span class="glyphicon glyphicon-log-in"></span>
+                    <a href="login.php"><span class="blinking glyphicon glyphicon-log-in"></span>
                         Вход
                     </a>
                 </li>

@@ -22,5 +22,4 @@ if ($_SESSION['user_group'] == 1){
         exit;
     }
 }
-
 header("Location: admin.php");

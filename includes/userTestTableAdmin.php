@@ -3,7 +3,7 @@
         <input type="hidden" value="<?php echo $surveyId; ?>" id="surveyId">
         <fieldset class="fieldset">
             <legend class="title-bold">
-                <a onclick="hideSurvey();" id="hidesurvey">
+                <a id="hidesurvey">
                     <h4 class="glyphicon glyphicon-book"></h4> Потребителски анкети <span class="caret"></span></a>
             </legend>
             <div class="form-group">
