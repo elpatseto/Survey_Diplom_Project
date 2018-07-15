@@ -15,7 +15,7 @@ require_once "connectDB.php";
         <form class="well form-horizontal" action="regUser.php" method="post" id="registration_form">
             <fieldset>
 
-                <legend class="title-bold">Регистриране на нов потребител!</legend>
+                <legend class="title-bold">Регистриране на нов потребител</legend>
 
                 <!-- Име-->
 

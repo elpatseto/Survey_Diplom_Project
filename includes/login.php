@@ -14,7 +14,7 @@ require_once 'nav.php';
             }
             ?>
             <fieldset>
-                <legend class="title-bold">Вход в системата!</legend>
+                <legend class="title-bold">Вход в системата</legend>
 
                 <!-- Потребителско име-->
                 <div class="form-group">

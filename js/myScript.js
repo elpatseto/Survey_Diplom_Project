@@ -1,5 +1,5 @@
 //Глобални променливи
-var txtAreaIndex = 1;
+var textAreaIndex = 1;
 var q = 1;
 var isAnswerField = false;
 var choose = '';
@@ -15,12 +15,12 @@ function createTextArea() {
         countMethod++;
         choose = "addTextField";
         isAnswerField = true;
-        txtAreaIndex++;
-        $('#section' + q + '').append('<div id="row' + txtAreaIndex + '">' +
+        textAreaIndex++;
+        $('#section' + q + '').append('<div id="row' + textAreaIndex + '">' +
             '<div class="row">' +
             '<div class=" col-md-8 col-xs-8">' +
-            '<textarea disabled rows="2" name="name' + txtAreaIndex + '" class="form-control txtArea" id="txtField' + txtAreaIndex + '"></textarea></div>' +
-            '<div class=" col-md-4 col-xs-4"><button type="button" id="' + txtAreaIndex + '" class="btn btn-danger btn_remove" onclick="deleteTxtArea(this.id)">X</button></div>' +
+            '<textarea disabled rows="2" name="name' + textAreaIndex + '" class="form-control txtArea" id="txtField' + textAreaIndex + '"></textarea></div>' +
+            '<div class=" col-md-4 col-xs-4"><button type="button" id="' + textAreaIndex + '" class="btn btn-danger btn_remove" onclick="deleteTxtArea(this.id)">X</button></div>' +
             '</div>' +
             '</div>');
     } else {
@@ -157,7 +157,7 @@ function answerRequired() {
 
 //Обработка на текстов отговор
 function replaceTextFiled() {
-    $('#' + txtAreaIndex + '').remove();
+    $('#' + textAreaIndex + '').remove();
     answerRequired();
     deleteCheckboxForAnswer();
 }

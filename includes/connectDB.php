@@ -2,9 +2,9 @@
 <?php
 // Задаваме хост, потребителско име, парола и име на БД
 $host = '127.0.0.1';
-$user = 'plamen';
-$password = 'qwerty';
-$db_name = 'Survey';
+$user = 'root';
+$password = '';
+$db_name = 'survey_plamen';
 
 
 // Създаване на връзка към MySQL.
