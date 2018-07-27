@@ -53,7 +53,7 @@ require_once 'nav.php';
                     <label class="col-md-4 control-label"> Ако не сте регистриран потребител </label>
                     <div class="col-md-4">
                         <button type="button" class="btn btn-default" onclick="location='register.php'">
-                            Регистрирация
+                            Регистрация
                         </button>
                     </div>
                 </div>

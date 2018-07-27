@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bca213de-e22c-4f3f-94f1-407ba6c93e68" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/connectDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/connectDB.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/dropDownChoice.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/dropDownChoice.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-1.11.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery-1.11.3.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/myScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/myScript.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,11 +31,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
               <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="470">
+              <caret line="43" column="66" lean-forward="true" selection-start-line="43" selection-start-column="66" selection-end-line="55" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -154,11 +158,11 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/includes/connectDB.php" />
         <option value="$PROJECT_DIR$/js/myScript.js" />
-        <option value="$PROJECT_DIR$/includes/login.php" />
         <option value="$PROJECT_DIR$/includes/register.php" />
         <option value="$PROJECT_DIR$/includes/dropDownChoice.php" />
         <option value="$PROJECT_DIR$/includes/testForm.php" />
         <option value="$PROJECT_DIR$/includes/index.php" />
+        <option value="$PROJECT_DIR$/includes/login.php" />
       </list>
     </option>
   </component>
@@ -404,27 +408,29 @@
       <workItem from="1531311066893" duration="420000" />
       <workItem from="1531319901659" duration="420000" />
       <workItem from="1531671136893" duration="235000" />
+      <workItem from="1532088071518" duration="257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="708276000" />
+    <option name="totallyTimeSpent" value="708533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="502" y="37" width="275" height="725" id="Project" order="1" sideWeight="0.49931034" visible="true" weight="0.21299255" />
+      <window_info active="true" content_ui="combo" x="502" y="37" width="275" height="725" id="Project" order="1" sideWeight="0.49931034" visible="true" weight="0.14270501" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="0" side_tool="true" weight="0.3275401" />
       <window_info anchor="right" id="Database" order="0" weight="0.32956383" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Run" order="6" />
       <window_info id="Structure" order="2" sideWeight="0.5006896" side_tool="true" weight="0.2253635" />
       <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info id="Favorites" order="0" sideWeight="0.5006896" side_tool="true" weight="0.2253635" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
@@ -766,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/createQuestion.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -805,6 +804,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="43" column="66" lean-forward="true" selection-start-line="43" selection-start-column="66" selection-end-line="55" selection-end-column="39" />
         </state>
       </provider>
     </entry>
