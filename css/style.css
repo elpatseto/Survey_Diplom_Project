@@ -718,4 +718,15 @@ resize: none;
      margin-left: 43px;
  }
 
+ .chck{
+     margin-left: 10px;
+ }
 
+ #right{
+     float: right;
+     margin-right: 0;
+     margin-left: 20px;
+ }
+element.style {
+    padding-left: 2px;
+}

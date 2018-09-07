@@ -1,6 +1,6 @@
 //Глобални променливи
 var textAreaIndex = 1;
-var q = 1;
+var q = 1; // номер на въпрос
 var isAnswerField = false;
 var choose = '';
 var strText = '';
@@ -36,18 +36,22 @@ function createCheckBox() {
         choose = "addCheckBox";
         isAnswerField = true;
         brCheckNum++;
-        $('#section' + q + '').append('<div id="rowCheck' + brCheckNum + '">' +
-            '<div class="row">' +
-            '<div class="col-md-2 col-sm-6 col-xs-6">' +
-            '<div class="form-check form-check-inline">' +
-            '<label class="checkbox-inline ck_btn">' +
-            '<input class="form-check-input big-checkbox" type="checkbox" name="quest[options][' + brCheckNum + ']" id="Checkbox' + brCheckNum + '" value="">' +
-            '<input type="text" class="form-control " id="checkText' + brCheckNum + '">' +
-            '</label>' +
-            '</div>' +
-            '</div>' +
-            '<div class="col-md-2 col-sm-6 col-xs-6"><button type="button" id="' + brCheckNum + '" class="btn btn-danger btn_remove_chkB" onclick="deleteCheckBox(this.id)">X</button>' +
-            '</div>' +
+        $('#section' + q + '').append('' +
+            '<div id="rowCheck' + brCheckNum + '">' +
+                '<div class="form-check">' +
+                  '<div class="row">' +
+                        '<div class="col-md-1 col-sm-1 col-xs-1">' +
+                          '<label class="pull-right">' +
+                          '<input class="form-check-input big-checkbox" type="checkbox" name="quest[options][' + brCheckNum + ']" id="Checkbox' + brCheckNum + '" value="">' +
+                          '</label>' +
+                        '</div>' +
+                        '<div class="col-md-7 col-sm-7 col-xs-7">' +
+                          '<input type="text" class="form-control " id="checkText' + brCheckNum + '" >' +
+                        '</div>' +
+                        '<div class="col-md-4 col-sm-4 col-xs-4">' +
+                          '<button type="button" id="' + brCheckNum + '" class="btn btn-danger btn_remove_chkB" onclick="deleteCheckBox(this.id)">X</button>' +
+                        '</div>' +
+                  '</div>' +
             '</div>');
     } else {
         swaEmptyOnlyOneMethodAloewd();
@@ -62,21 +66,23 @@ function createRadio() {
         choose = "addRadio";
         isAnswerField = true;
         brRadioNum++;
-        $('#section' + q + '').append('<div id="rowRadio' + brRadioNum + '">' +
-            '<div class="row">' +
-            '<div class="col-md-2 col-sm-6 col-xs-6">' +
-            '<div class="form-check form-check-inline">' +
-            '<div class="radio-inline rd_btn">' +
-            '<label class="radio-inline"><input type="radio" name="optradio" id="radioBtn' + brRadioNum + '">' +
-            '<input type="text" class="form-control radioTxt" id="radioText' + brRadioNum + '">' +
-            '</label>' +
-            '</div>' +
-            '</div>' +
-            '</div>' +
-            '<div class="col-md-2 col-sm-6 col-xs-6">' +
-            '<button type="button" id="' + brRadioNum + '" class="btn btn-danger btn_remove_radio" onclick="deleteRadio(this.id)">X</button>' +
-            '</div>' +
-            '</div>' +
+        $('#section' + q + '').append(
+            '<div id="rowRadio' + brRadioNum + '">' +
+             '<div class="form-check">' +
+               '<div class="row">' +
+                 '<div class="col-md-1 col-sm-1 col-xs-1">' +
+                   '<label class="pull-right">' +
+                     '<input type="radio" name="optradio" id="radioBtn' + brRadioNum + '">' +
+                   '</label>' +
+                 '</div>' +
+                 '<div class="col-md-7 col-sm-7 col-xs-7">' +
+                   '<input type="text" class="form-control radioTxt" id="radioText' + brRadioNum + '">' +
+                  '</div>' +
+                 '<div class="col-md-4 col-sm-4 col-xs-4">' +
+                   '<button type="button" id="' + brRadioNum + '" class="btn btn-danger btn_remove_radio" onclick="deleteRadio(this.id)">X</button>' +
+                 '</div>' +
+               '</div>' +
+             '</div>' +
             '</div>');
     } else {
         swaEmptyOnlyOneMethodAloewd();
@@ -218,14 +224,12 @@ function checkEmptyQuestion() {
         }
     } else if (strText != '' && choose == 'addCheckBox') {
         if (isAnswerField == true) {
-            saveQuestionRequest();
             checkCheckBoxForEmptyFields();
         } else {
             swaEmptyAnswerTypе();
         }
     } else if (strText != '' && choose == 'addRadio') {
         if (isAnswerField == true) {
-            saveQuestionRequest();
             checkRadioForEmptyFields();
         } else {
             swaEmptyAnswerTypе();
@@ -250,6 +254,7 @@ function checkCheckBoxForEmptyFields() {
         }
     }
     if (flagSuccess == false) {
+        saveQuestionRequest();
         replaceCheckText();
         createQuestion();
     }
@@ -270,6 +275,7 @@ function checkRadioForEmptyFields() {
         }
     }
     if (flagSuccess == false) {
+        saveQuestionRequest();
         replaceRadio();
         createQuestion();
     }
@@ -299,7 +305,7 @@ function onlyOneOptionRadio() {
     return false;
 }
 
-//
+//Записва създадениете опции за отговор в БД
 function saveQuestionRequest() {
     var chkAnswers = [];
     var chkOptions = [];
@@ -338,6 +344,7 @@ function saveQuestionRequest() {
         });
 }
 
+//Помощтна функция за създаване на url
 function setSurveyUrl() {
 
     if (q > 1) {
@@ -361,6 +368,7 @@ function setSurveyUrl() {
     }
 }
 
+//Известие - нужен е поне 1 въпрос
 function swaNeedOneQuestio() {
     sweetAlert({
         title: "ВНИМАНИЕ!",
@@ -414,6 +422,7 @@ function swaFillRequiredQuestion() {
     });
 }
 
+//Известие за невалидно потребителско име или парола
 function swaWrongUser() {
     sweetAlert({
         title: "ВНИМАНИЕ!",
@@ -422,6 +431,7 @@ function swaWrongUser() {
     });
 }
 
+//Известие за изтриване на анкета
 function swaDelete(sId) {
     swal({
             title: "Сигурни ли сте?",
@@ -445,6 +455,7 @@ function swaDelete(sId) {
         });
 }
 
+//Известие за изтриване на потребител
 function swaDeleteUser(user) {
     swal({
             title: "Сигурни ли сте?",
@@ -468,6 +479,7 @@ function swaDeleteUser(user) {
         });
 }
 
+//Изпращане на линк
 function getUrl(surveyUrl) {
     var url = "http://localhost/Survey_Diplom_Project/includes/" + surveyUrl;
     swal({
@@ -489,6 +501,7 @@ function getUrl(surveyUrl) {
     });
 }
 
+//Запазва позицията
 function SaveScrollXY() {
     document.forms.ScrollX.value = document.body.scrollLeft;
     document.forms.ScrollY.value = document.body.scrollTop;
@@ -509,22 +522,25 @@ function scroll() {
     }, 1000);
 }
 
-
+//Известие за успешно попълнена анкета
 function swaSuccessfullyFillTest() {
     swal("Благодарим Ви!",
         "Вашите отговори са отчетени!", "success")
 }
 
+//Известие за успешна регистрация
 function swaHelloNewUser() {
     swal("Благодарим Ви за регистрацията!",
         "Вече може да се логнете!", "success")
 }
 
+//Известие за логнат потребител
 function swaHelloUser() {
     swal("Здравейте !",
         "Желаем Ви приятни емоции в сайта!", "success")
 }
 
+//Променя CSS кода при непопълнен задължителен въпрос
 function changeCSSWrong(current) {
     var changeStyle = document.getElementById(current);
     changeStyle.style.color = "red";
@@ -532,12 +548,14 @@ function changeCSSWrong(current) {
     changeStyle.style.borderRadius = "7px";
 }
 
+//Променя CSS кода при попълнен задължителен въпрос
 function changeCSSGood(current) {
     var changeStyle = document.getElementById(current);
     changeStyle.style.backgroundColor = "#d0d0d0";
     changeStyle.style.color = "black";
 }
 
+//Проверява дали са попълнени задължителните въпроси
 function submitSurvey() {
     for (var i = 0; i < reqQuest.length; i++) {
         if (reqQuest_types[i] == 1) {
@@ -587,9 +605,11 @@ function submitSurvey() {
     document.forms[0].submit();
 }
 
+
 function deleteSurvey() {
     swaDelete();
 }
+
 
 function showAnswer() {
     document.getElementById("show-answers").submit();
@@ -650,8 +670,13 @@ function blinker() {
 }
 setInterval(blinker, 1000);
 
+function goDown() {
 
+        $('html, body').animate({
+            scrollTop: $("#row_promo").offset().top
+        }, 1000);
 
+}
 
 
 

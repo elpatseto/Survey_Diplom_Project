@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+require_once 'header.php';
 $currentPage = "index";
 $dropDownChoice = "Създай";
 
@@ -23,7 +23,7 @@ if (isUserLogged()) {
         <div class="header-content-inner">
             <h1>МавериК</h1>
             <h4 style="color: black;">Създайте собсвен тест, анкета или викторина</h4>
-            <a href="#row promo" class="btn btn-primary btn-lg">Старт</a>
+            <a href="#" class="btn btn-primary btn-lg" onclick="goDown();">Старт</a>
         </div>
     </div>
 </header>
@@ -99,7 +99,7 @@ if (isUserLogged()) {
 </section>
 
 <!-- Promos -->
-<div class="container-fluid" id="row promo">
+<div class="container-fluid" id="row_promo">
     <div class="row promo">
         <a href="#">
             <div class="col-md-4 promo-item item-1">

@@ -14,7 +14,7 @@
                 </a>
                 <div class="info" id="info-user-tests" hidden>
                     <h6><em><span class="glyphicon glyphicon-link"></span> - За преглед на формуляр натиснете с левия
-                            бутон на мипката върху заглавието!</em>
+                            бутон на мишката върху заглавието!</em>
                         <img class="blinking" src="../images/computer-mouse-left-click.png" style="width: 25px; ">
                     </h6>
                     <h6><em><span class="glyphicon glyphicon-signal"></span> - За преглед на графика натиснете върху

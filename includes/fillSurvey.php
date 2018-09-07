@@ -102,7 +102,7 @@ while ($row = $result->fetch_assoc()) {
     print "<div id = \"q$row[id]\"> $questNumber. $reqQ $row[question_name]</div>";
 
     if ($row['input_type_id'] == 1) {
-        //$tpl->set('questionNumber',$questNumber);
+
         print $tpl->fetch('templateTextField.html');
     }
     if (($row['input_type_id'] == 2) or ($row['input_type_id'] == 3)) {
@@ -131,12 +131,16 @@ while ($row = $result->fetch_assoc()) {
 
 $required_questions = substr($required_questions, 1);
 $required_questions_types = substr($required_questions_types, 1);
-print '<script type = "text/javascript">
 
-reqQuest = new Array(' . $required_questions . '); 
-reqQuest_types = new Array(' . $required_questions_types . '); 
+print '<body>
+    <script type = "text/javascript">
+    
+    reqQuest = new Array(' . $required_questions . '); 
+    reqQuest_types = new Array(' . $required_questions_types . '); 
+    
+    </script>
+</body>';
 
-</script>';
 require_once 'sectionDown.php';
 require_once 'footer.php';
 
