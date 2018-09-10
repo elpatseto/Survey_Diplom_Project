@@ -16,8 +16,6 @@ if (isUserLogged() == 1) {
 
     <div class="container">
         <fieldset class="fieldset">
-            
-
                 <legend class="title-bold"> Създаване на анкета</legend>
                 <form action="createQuestion.php" id="survey-headers" method="POST">
                     <div class="form-group">
@@ -39,14 +37,8 @@ if (isUserLogged() == 1) {
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4 col-md-4 col-xs-4">
-                        </div>
-                        <div class="col-4 col-sm-4 col-xs-4 text-center">
+                        <div class=" text-center">
                             <input type="submit" class="btn btn-default" value="Премини към въпрoсите">
-                        </div>
-                        <div class="col-sm-4 col-md-4 col-xs-4">
-                            <input type="button" class="btn btn-warning" id="go-back" value="Назад"
-                                   onclick="location.href='index.php';">
                         </div>
                     </div>
                 </form>
