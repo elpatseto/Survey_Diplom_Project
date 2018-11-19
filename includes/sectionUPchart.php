@@ -14,8 +14,6 @@
                         </div>
                     </div>
                 </legend>
-                <h6 style="color: crimson"><em>Въпросите със
-                        знак - " <span class="glyphicon glyphicon-star"></span> " са задължителни!</em></h6>
-                <input type="hidden" name="title" value="<?php echo $title; ?>">
+
 
 

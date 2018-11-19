@@ -38,20 +38,20 @@ function createCheckBox() {
         brCheckNum++;
         $('#section' + q + '').append('' +
             '<div id="rowCheck' + brCheckNum + '">' +
-                '<div class="form-check">' +
-                  '<div class="row">' +
-                        '<div class="col-md-1 col-sm-1 col-xs-1">' +
-                          '<label class="pull-right">' +
-                          '<input class="form-check-input big-checkbox" type="checkbox" name="quest[options][' + brCheckNum + ']" id="Checkbox' + brCheckNum + '" value="">' +
-                          '</label>' +
-                        '</div>' +
-                        '<div class="col-md-7 col-sm-7 col-xs-7">' +
-                          '<input type="text" class="form-control " id="checkText' + brCheckNum + '" >' +
-                        '</div>' +
-                        '<div class="col-md-4 col-sm-4 col-xs-4">' +
-                          '<button type="button" id="' + brCheckNum + '" class="btn btn-danger btn_remove_chkB" onclick="deleteCheckBox(this.id)">X</button>' +
-                        '</div>' +
-                  '</div>' +
+            '<div class="form-check">' +
+            '<div class="row">' +
+            '<div class="col-md-1 col-sm-1 col-xs-1">' +
+            '<label class="pull-right">' +
+            '<input class="form-check-input big-checkbox" type="checkbox" name="quest[options][' + brCheckNum + ']" id="Checkbox' + brCheckNum + '" value="">' +
+            '</label>' +
+            '</div>' +
+            '<div class="col-md-7 col-sm-7 col-xs-7">' +
+            '<input type="text" class="form-control " id="checkText' + brCheckNum + '" >' +
+            '</div>' +
+            '<div class="col-md-4 col-sm-4 col-xs-4">' +
+            '<button type="button" id="' + brCheckNum + '" class="btn btn-danger btn_remove_chkB" onclick="deleteCheckBox(this.id)">X</button>' +
+            '</div>' +
+            '</div>' +
             '</div>');
     } else {
         swaEmptyOnlyOneMethodAloewd();
@@ -68,21 +68,21 @@ function createRadio() {
         brRadioNum++;
         $('#section' + q + '').append(
             '<div id="rowRadio' + brRadioNum + '">' +
-             '<div class="form-check">' +
-               '<div class="row">' +
-                 '<div class="col-md-1 col-sm-1 col-xs-1">' +
-                   '<label class="pull-right">' +
-                     '<input type="radio" name="optradio" id="radioBtn' + brRadioNum + '">' +
-                   '</label>' +
-                 '</div>' +
-                 '<div class="col-md-7 col-sm-7 col-xs-7">' +
-                   '<input type="text" class="form-control radioTxt" id="radioText' + brRadioNum + '">' +
-                  '</div>' +
-                 '<div class="col-md-4 col-sm-4 col-xs-4">' +
-                   '<button type="button" id="' + brRadioNum + '" class="btn btn-danger btn_remove_radio" onclick="deleteRadio(this.id)">X</button>' +
-                 '</div>' +
-               '</div>' +
-             '</div>' +
+            '<div class="form-check">' +
+            '<div class="row">' +
+            '<div class="col-md-1 col-sm-1 col-xs-1">' +
+            '<label class="pull-right">' +
+            '<input type="radio" name="optradio" id="radioBtn' + brRadioNum + '">' +
+            '</label>' +
+            '</div>' +
+            '<div class="col-md-7 col-sm-7 col-xs-7">' +
+            '<input type="text" class="form-control radioTxt" id="radioText' + brRadioNum + '">' +
+            '</div>' +
+            '<div class="col-md-4 col-sm-4 col-xs-4">' +
+            '<button type="button" id="' + brRadioNum + '" class="btn btn-danger btn_remove_radio" onclick="deleteRadio(this.id)">X</button>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
             '</div>');
     } else {
         swaEmptyOnlyOneMethodAloewd();
@@ -101,7 +101,7 @@ function createQuestion() {
         '<div class="row">' +
         '<div class="col-md-8 col-sm-8 col-xs-8">' +
         '<label class="questLabel" id="questLabel' + q + '">' + q + '.</label>' +
-        '<input type="text" name="questName"  id="questName' + q + '" class="form-control"></div>' +
+        '<input type="text" name="questName"  id="questName' + q + '" class="form-control" placeholder="Въведете заглавие на въпрос"></div>' +
         '<div class="col-md-12 col-sm-12 col-xs-12">\n' +
         '<input type="checkbox" class="form-check-input" id="isRequired' + q + '">\n' +
         '<label class="label required-answer" id="labelAnswer' + q + '">Задължителен отговор</label>\n' +
@@ -347,25 +347,44 @@ function saveQuestionRequest() {
 //Помощтна функция за създаване на url
 function setSurveyUrl() {
 
-    if (q > 1) {
-        checkEmptyQuestion();
-        var url = "index.php";
-        var object = {
-            sId: document.getElementById("surveyId").value
-        };
+    swal({
+            title: "Наистина ли приключихте?",
+            text: "Създаването на тази анкета ще се преустанови!",
+            type: "warning",
+            showCancelButton: true,
+            confirmButtonClass: "btn-danger",
+            confirmButtonText: "Да, приключих!",
+            cancelButtonText: "Не, продължавам!",
+            closeOnConfirm: false,
+            closeOnCancel: false
+        },
+        function (isConfirm) {
+            if (isConfirm) {
 
-        $.post("saveQuestion.php", object,
-            function (data) {
+                if (q > 1) {
+                    checkEmptyQuestion();
+                    var url = "index.php";
+                    var object = {
+                        sId: document.getElementById("surveyId").value
+                    };
 
-            });
+                    $.post("saveQuestion.php", object,
+                        function (data) {
 
-        swal("Поздравления", "Успешно създадохте анкета!", "success");
-        setTimeout(function () {
-            window.location = url;
-        }, 2000);
-    } else {
-        swaNeedOneQuestio();
-    }
+                        });
+
+                    swal("Поздравления!", "Успешно създадохте анкета", "success");
+                    setTimeout(function () {
+                        window.location = url;
+                    }, 2000);
+                } else {
+                    swaNeedOneQuestio();
+                }
+            } else {
+                swal("Чудесно!", "Може да продължите", "success");
+                return false;
+            }
+        });
 }
 
 //Известие - нужен е поне 1 въпрос
@@ -497,7 +516,7 @@ function getUrl(surveyUrl) {
         }
         window.location = 'mailto:' + email + '?subject=' + 'Анкета' +
             '&body=' + 'Моля попълнете анкетата - ' + url;
-        swal( email , "Очаква вашата анкета!", "success");
+        swal(email, "Очаква вашата анкета!", "success");
     });
 }
 
@@ -668,14 +687,26 @@ function blinker() {
     $('.blinking').fadeOut(1000);
     $('.blinking').fadeIn(1000);
 }
+
 setInterval(blinker, 1000);
 
 function goDown() {
 
-        $('html, body').animate({
-            scrollTop: $("#row_promo").offset().top
-        }, 1000);
+    $('html, body').animate({
+        scrollTop: $("#row_promo").offset().top
+    }, 1000);
 
+}
+
+function help() {
+    $('#trigger-alert').click(function () {
+        var options = {
+            title: 'Типове за отговор',
+            text: '<img width="450" height="350" src="../images/help.jpg">',
+            html: true
+        };
+        swal(options);
+    });
 }
 
 

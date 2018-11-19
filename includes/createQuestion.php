@@ -58,7 +58,7 @@ include 'surveyHedersQuery.php';
                         <div class="row">
                             <div class="col-md-8 col-sm-8 col-xs-8">
                                 <label class="questLabel" id="questLabel1">1. </label>
-                                <input type="text" name="questName[]" id="questName1" class="form-control">
+                                <input type="text" name="questName[]" id="questName1" class="form-control" placeholder="Въведете заглавие на въпрос">
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12">
                                 <input type="checkbox" class="form-check-input" id="isRequired1">
@@ -87,6 +87,7 @@ include 'surveyHedersQuery.php';
                     </div>
 
                     <div id="dropdown" class="dropdown">
+
                         <button type="button" class="btn btn-info drop" id="button1">
                             <a href="#" class="glyphicon glyphicon-plus " data-toggle="dropdown"
                                aria-haspopup="true" aria-expanded="false"> ТИП <span class="caret"></span>
@@ -95,7 +96,10 @@ include 'surveyHedersQuery.php';
                             include 'dropDownChoice.php';
                             ?>
                         </button>
+                        <h4 style="display: inline;"><a id="trigger-alert" class="glyphicon glyphicon-info-sign" title="Информация за типовете"
+                                                        onclick="help();"></a></h4>
                     </div>
+
                     <input type="hidden" value="" id="qtype">
                     <button type="button" id="nextQuest" class="btn btn-info new_quest"
                             onclick="checkEmptyQuestion();">

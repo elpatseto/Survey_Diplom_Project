@@ -20,8 +20,8 @@ if (isUserLogged()) {
 
                 <!-- Form Name -->
                 <legend class="title-bold">Моля попълненте формата!
-                    <h6 style="color: crimson"><em>Полетата със този
-                            знак " <span class="glyphicon glyphicon-star"></span> " са задължителни!</em></h6>
+                    <h6 style="color: crimson"><em>Полетата със
+                            знак - " <span class="glyphicon glyphicon-star"></span> " са задължителни!</em></h6>
                 </legend>
 
 

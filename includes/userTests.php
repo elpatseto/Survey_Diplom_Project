@@ -13,6 +13,7 @@ if (isUserLogged() == 1) {
 } else {
     require_once 'nav-login.php';
 }
+
 // Задаваме пътя до директориите на шаблоните
 $path = '../templates/';
 

@@ -93,13 +93,6 @@ if (!isUserLogged()) {
                 </div>
             </div>
             <hr>
-
-            <div class="row">
-                <div class="right">
-                    <input type="button" class="btn btn-warning" id="go-back" value="Назад"
-                           onclick="location.href='index.php';">
-                </div>
-            </div>
         </fieldset>
     </div>
 </section>

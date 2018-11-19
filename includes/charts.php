@@ -55,7 +55,7 @@ while ($row = $result->fetch_assoc()) {
     $title = $row['survey_name'] . ' ';
     $instruction = $row ['instructions'];
 }
-require_once 'sectionUP.php';
+require_once 'sectionUPchart.php';
 
 $questNumber = 0;
 
